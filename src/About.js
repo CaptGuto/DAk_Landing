@@ -32,27 +32,23 @@ const About = forwardRef((_, ref) => {
                         <header className="About_Header_Container container-fluid col-sm-12">
                             <div className="Content_Holder container">
                                 <div className="About-Header-Text">
-                                    <h1>
-                                        About
-                                        <span className="makeGold"> US</span>
-                                    </h1>
+                                    <h1>About US</h1>
                                 </div>
                             </div>
                         </header>
                         <div className="left_content_holder">
                             <div className="left_content_paragraph top_content">
                                 <p>
-                                    DAK Trading PLC is a leading Ethiopian
-                                    import-export company dedicated to
-                                    facilitating seamless global trade. We
-                                    empower Ethiopian businesses by connecting
-                                    their high-quality exports, like sesame
-                                    seeds, soya beans, and various pulses, with
-                                    international markets. Additionally, we
-                                    serve Ethiopian industries by importing
-                                    essential products such as tires, ceramics,
-                                    trucks and industrial machinery, industrial
-                                    chemicals, and plastics.
+                                    DAK Trading PLC is dedicated to creating
+                                    sustainable and efficient trade pathways
+                                    between Ethiopia and global markets. Our
+                                    mission is to ensure the highest quality in
+                                    both our exports and imports while
+                                    delivering exceptional service to our
+                                    partners and clients. We aim to set the
+                                    standard for excellence and innovation in
+                                    trade, fostering growth and success in our
+                                    industry.
                                 </p>
                             </div>
                             <div className="bottom_content">
@@ -61,38 +57,42 @@ const About = forwardRef((_, ref) => {
                                 </div>
                                 <div className="left_content_paragraph">
                                     <ul>
+                                        <h5>Our Mission</h5>
                                         <li>
-                                            To promote Ethiopian exports by
-                                            creating reliable market access for
-                                            local producers.
+                                            To be the preferred partner for
+                                            sourcing premium Ethiopian
+                                            agricultural products globally.
                                         </li>
                                         <li>
-                                            To ensure a consistent supply of
-                                            essential goods for Ethiopian
-                                            industries and consumers.
+                                            To expand our network of
+                                            international trade partners and
+                                            foster long-term, mutually
+                                            beneficial relationships.
                                         </li>
                                         <li>
                                             {" "}
-                                            To foster international trade
-                                            partnerships that benefit Ethiopia's
-                                            economic growth.
+                                            To contribute to the economic growth
+                                            and development of Ethiopia by
+                                            facilitating seamless international
+                                            trade.
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div className="left_content_paragraph top_content">
                                 <p>
-                                    DAK Trading PLC is a leading Ethiopian
-                                    import-export company dedicated to
-                                    facilitating seamless global trade. We
-                                    empower Ethiopian businesses by connecting
-                                    their high-quality exports, like sesame
-                                    seeds, soya beans, and various pulses, with
-                                    international markets. Additionally, we
-                                    serve Ethiopian industries by importing
-                                    essential products such as tires, ceramics,
-                                    trucks and industrial machinery, industrial
-                                    chemicals, and plastics.
+                                    <h5>Vision and Core Values</h5>
+                                    Our vision is to lead the way in Ethiopia
+                                    and East Africa, setting benchmarks for
+                                    excellence through unwavering commitment to
+                                    quality, reliability, and innovative
+                                    solutions. We uphold core values of
+                                    integrity, customer satisfaction, and
+                                    sustainability, aiming to foster growth and
+                                    make a significant impact on both local and
+                                    global markets. At DAK Trading PLC, we are
+                                    dedicated to building a legacy of trust and
+                                    excellence.
                                 </p>
                             </div>
                         </div>

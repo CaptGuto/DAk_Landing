@@ -73,13 +73,13 @@ function App() {
             <About ref={AboutRef} />
             <StaionedImage image={image1} />
             <Service
-                title={"Exported Items"}
+                title={"Export "}
                 images={imagesForServiceImported}
                 ref={ServiceRef}
             />
             <StaionedImage image={image2} />
             <ServiceExport
-                title={"Imported Items"}
+                title={"Import "}
                 images={imagesForServiceExported}
             />
 

@@ -9,7 +9,10 @@ const Service = forwardRef(({ title, images }, ref) => {
                 {/* <h1>Services</h1> */}
 
                 <span className="Service-Title">
-                    <h2>{title}</h2>
+                    <h2>
+                        {title}
+                        <span className="Service-Title-Item-Span">Items</span>
+                    </h2>
                 </span>
             </div>
             <div class="Content_Holder">
@@ -18,10 +21,10 @@ const Service = forwardRef(({ title, images }, ref) => {
                         <Cards
                             cardTitle={"Tyer"}
                             cardSmallDescription={
-                                "Humera and wellega finest sesame seeds"
+                                "Our imported tyres offer an exceptional balance of quality and affordability."
                             }
                             cardDescription={
-                                "Humera and Wellega are renowned varieties of Ethiopian sesame seeds, valued for their high oil content and rich flavor. Humera is known for its whitish color, while Wellega is darker and aromatic."
+                                "Designed for durability and optimal performance, these tyres provide reliability for a variety of vehicles, ensuring safety and value for our customers. For everyday use or long-distance travel, our tyres stand out for their quality."
                             }
                             image={images[0]}
                             theme={theme}
@@ -31,10 +34,10 @@ const Service = forwardRef(({ title, images }, ref) => {
                         <Cards
                             cardTitle={"Trucks and Machinery"}
                             cardSmallDescription={
-                                "High protine Soya beans from northern Ethiopia"
+                                "Top-quality, exceptional performance and reliability at great value."
                             }
                             cardDescription={
-                                "Ethiopian soybeans are notable for their high protein content and adaptability, contributing significantly to the country's agriculture by enhancing food security and supporting local industries."
+                                "Designed for power and endurance, our trucks and machinery deliver exceptional performance across demanding industries. Whether for construction, transport, or agriculture, they are built to handle tough tasks efficiently."
                             }
                             image={images[1]}
                             theme={theme}
@@ -44,10 +47,10 @@ const Service = forwardRef(({ title, images }, ref) => {
                         <Cards
                             cardTitle={"Industrial Chemicals"}
                             cardSmallDescription={
-                                "High oil content and quality Ethiopian Niger seed"
+                                " Formulated to meet the highest standards of quality and efficiency."
                             }
                             cardDescription={
-                                "Ethiopian Niger seed is prized for its high oil content and quality, commonly used for edible oil production. It supports local agriculture and is an important export commodity. The finest in Ethiopia"
+                                "Suitable for a wide range of applications, they provide reliable performance in manufacturing, processing, and other industrial operations. With a focus on safety and effectiveness, our chemicals ensure consistency and value."
                             }
                             image={images[2]}
                             theme={theme}
@@ -57,10 +60,10 @@ const Service = forwardRef(({ title, images }, ref) => {
                         <Cards
                             cardTitle={"Plastics "}
                             cardSmallDescription={
-                                "A unique appearance and high protein content"
+                                "Superior strength, versatility, durability, and wide range of applications."
                             }
                             cardDescription={
-                                "Ethiopian White Speckled Beans are valued for their rich protein content and unique appearance, contributing to local diets and serving as an important export crop for the country's agriculture."
+                                "From packaging to industrial use, these plastics provide reliable performance and flexibility, ensuring long-lasting results. With a focus on quality and sustainability, helps meet the needs of both manufacturers and consumers."
                             }
                             image={images[3]}
                             theme={theme}
@@ -70,10 +73,10 @@ const Service = forwardRef(({ title, images }, ref) => {
                         <Cards
                             cardTitle={"Ceramic"}
                             cardSmallDescription={
-                                "high nutritional value and versatility in cooking"
+                                "Crafted for durability and precision, our ceramics blend elegance with strength."
                             }
                             cardDescription={
-                                "Ethiopian Green Mung Beans are known for their high nutritional value and versatility in cooking, playing a significant role in local diets and contributing to the countrys agricultural exports the best quility in Ethiopia "
+                                "With their refined aesthetic and robust durability, these ceramics enhance both functionality and visual appeal. Ideal for applications requiring both style and resilience, our high-quality ceramics provide lasting value and quality."
                             }
                             image={images[4]}
                             theme={theme}

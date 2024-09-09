@@ -1,4 +1,4 @@
-import main_logo from "./assets/images/D_3_-removebg-preview.png";
+import main_logo from "./assets/images/D_4__1_-removebg-preview.png";
 import { Navbar, Nav, Container } from "react-bootstrap";
 
 function Header({
@@ -15,8 +15,9 @@ function Header({
             // bg="dark"
             variant="dark"
             className="custom-navbar"
+            style={{ padding: "0px" }}
         >
-            <Container>
+            <Container style={{ paddingTop: "0px", paddingBottom: "0px" }}>
                 <Navbar.Brand href="#">
                     <img
                         src={main_logo}

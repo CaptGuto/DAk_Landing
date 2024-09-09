@@ -9,7 +9,10 @@ const Service = forwardRef(({ title, images }, ref) => {
                 {/* <h1>Services</h1> */}
 
                 <span className="Service-Title">
-                    <h2>{title}</h2>
+                    <h2>
+                        {title}
+                        <span className="Service-Title-Item-Span">Items</span>
+                    </h2>
                 </span>
             </div>
             <div class="Content_Holder">
@@ -66,7 +69,7 @@ const Service = forwardRef(({ title, images }, ref) => {
                             theme={theme}
                         />
                     </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
+                    {/* <div class="col-lg-4 col-md-6 mb-4">
                         <Cards
                             cardTitle={"White Speckled Bean"}
                             cardSmallDescription={
@@ -78,7 +81,7 @@ const Service = forwardRef(({ title, images }, ref) => {
                             image={images[3]}
                             theme={theme}
                         />
-                    </div>
+                    </div> */}
                     <div class="col-lg-4 col-md-6 mb-4">
                         <Cards
                             cardTitle={"Green Mung Bean"}
