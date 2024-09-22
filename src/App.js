@@ -1,32 +1,30 @@
-import "./App.css";
+import "./style/App.css";
 import { useRef } from "react";
-import Header from "./Hearder";
-import Hero from "./Hero";
-import About from "./About";
-import StaionedImage from "./StationaryImage";
-import Cards from "./Cards";
-import Service from "./Service";
-import ServiceExport from "./ServiceExport";
-import DetailPage from "./DetailPage";
-import ContactUs from "./ContactUs";
+import Header from "./components/Hearder";
+import Hero from "./section/Hero";
+import About from "./section/About";
+import StaionedImage from "./components/StationaryImage";
+import Service from "./section/Service";
+import ServiceExport from "./section/ServiceExport";
 
-import imageCardImport1 from "./assets/images/Products/sesame-seeds.jpeg";
-import imageCardImport3 from "./assets/images/Products/nigerSeed.png";
-import imageCardImport2 from "./assets/images/Products/SoyaBean-transformed.jpeg";
-import imageCardImport4 from "./assets/images/Products/WhiteSpeckledBeans.jpg";
-import imageCardImport5 from "./assets/images/Products/GreenMungBeans.jpeg";
+import imageCardImport1 from "./assets/images/Products/replacement-sesame-seeds.jpg";
+import imageCardImport3 from "./assets/images/Products/replacement-Niger-Seed.webp";
+import imageCardImport2 from "./assets/images/Products/soyaBean-replacement-2.png";
+import imageCardImport4 from "./assets/images/Products/secondReplacemt-white-peckled-bean.jpeg";
+import imageCardImport5 from "./assets/images/Products/Mung_Bean.jpg";
+import imageCardImport6 from "./assets/images/Products/Unroasted-coffee.webp";
 
-import imageCardExport1 from "./assets/images/Products/tyer.png";
-import imageCardExport3 from "./assets/images/Products/chemicals.png";
-import imageCardExport2 from "./assets/images/Products/truck.png";
+import imageCardExport1 from "./assets/images/Products/Replacement-Tyer.jpg";
+import imageCardExport3 from "./assets/images/Products/second-replacement-rebars.jpg";
+import imageCardExport2 from "./assets/images/Products/replacement-truck.jpg";
 import imageCardExport4 from "./assets/images/Products/pePlastic.webp";
-import imageCardExport5 from "./assets/images/Products/ceramic.png";
+import imageCardExport5 from "./assets/images/Products/ceramic.webp";
 
-import image1 from "./assets/images/background-for-section.png";
-import image2 from "./assets/images/polina-rytova-1dGMs4hhcVA-unsplash.jpg";
+import image1 from "./assets/images/background-for-section.webp";
+import image2 from "./assets/images/polina-rytova-1dGMs4hhcVA-unsplash.webp";
 
-import Contact from "./Contact";
-import ContactForm from "./ContactForm";
+import Contact from "./section/Contact";
+import ContactForm from "./section/ContactForm";
 function App() {
     const imagesForServiceImported = [
         imageCardImport1,
@@ -34,6 +32,7 @@ function App() {
         imageCardImport3,
         imageCardImport4,
         imageCardImport5,
+        imageCardImport6,
     ];
     const imagesForServiceExported = [
         imageCardExport1,
@@ -85,9 +84,12 @@ function App() {
 
             <Contact ref={ContactRef} />
             <ContactForm />
-            {/* <ContactUs /> */}
         </div>
     );
 }
 
 export default App;
+
+//Todo: Clean up and orgnize the code
+//Todo: Compress the images using webp
+// Todo: Try to reduce the size of the project
