@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Playwrite+ID:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* have removed the flex property form Content_Holder  !!!!!!! */ 
 
 @font-face {
   font-family: 'BroshK';
@@ -73,7 +74,6 @@
 .Header_Container .Content_Holder{
   max-height: 100%;
   width: 100%;
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -935,4 +935,24 @@ h1{
   .left_content_paragraph_image_holder img {
     width: 280px !important; 
   }
+}
+
+img, video{
+  min-width: 100%;
+  max-width: none;
+}
+
+.clip-path {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit; /* Inherit the background from the parent */
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+  z-index: 0; /* Place it behind other content */
+}
+
+.redit{
+  background: red;
 }

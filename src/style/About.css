@@ -1,0 +1,123 @@
+.Replacement-About-Container{
+
+}
+.Content_Holder{
+    /* background-color: blue; */
+}
+
+.Replacement-About-Container .About_content_holder{
+    display: flex;
+    flex-direction: column;
+}
+.first-box, .second-box, .third-box{
+    margin: 30px 10px;
+    display: flex;
+}
+
+.third-box{
+    color: #f1f1f1;
+}
+
+.text-section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    padding: 10px 60px;
+}
+.text-section p{
+    font-size: 1.2rem;
+}
+.text-section .first-paragraph{
+    font-size: 2rem;
+}
+.text-section .dak-name-in-paragraph{
+    font-size: 2.1rem;
+}
+/* latter give it a better style from online */
+.btn-product-check{
+    /* background-color: red;  */
+    border-radius: 5px;
+    width: 180px;
+}
+
+
+.image-section-container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid brown; */
+}
+.image-section{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.image-section img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.paragraph-listing ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraph-listing-heading{
+    text-align: center;
+    margin: 10px;
+}
+.Replacement-About-Container h5{
+    font-size: 1.8rem;
+}
+
+.paragraph-listing ul{
+    font-size: 1.2rem;
+}
+
+
+@media (max-width: 590px) {
+    .first-box, .third-box{
+        flex-direction: column;
+    }
+    .second-box {
+        flex-direction: column-reverse;
+    }
+    .image-section-container{
+        width: 100%;
+    }
+    .text-section{
+        width: 100%;
+        padding: 10px 10px;
+    }
+    /* Todo: adjust the font size of the following screen size */
+  }
+
+  /* Color Styling */
+  .first-about-container{
+    background: linear-gradient(to left, #131e2a 50%, #f1f1f1 50%);
+    background-size: 200% 100%;
+    position: relative;
+    /* background: linear-gradient(to right, #f1f1f1 65%, var(--secondary-color) 45%); */
+  }
+  .second-about-container{
+    background: #ffffff;
+  }
+.third-about-container{
+    background: linear-gradient(to right, #131e2a 50%, #f1f1f1 50%);
+    background-size: 200% 100%;
+    position: relative;
+}
+.About-section-title{
+    background: #f1f1f1;
+}
+
+  
+.text-about-us-container h1{
+    font-weight: bold;
+}

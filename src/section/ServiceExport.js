@@ -58,6 +58,19 @@ const Service = forwardRef(({ title, images }, ref) => {
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
                         <Cards
+                            cardTitle={"Building Materials "}
+                            cardSmallDescription={
+                                "Superior strength, versatility, durability, and wide range of applications."
+                            }
+                            cardDescription={
+                                "From packaging to industrial use, these plastics provide reliable performance and flexibility, ensuring long-lasting results. With a focus on quality and sustainability, helps meet the needs of both manufacturers and consumers."
+                            }
+                            image={images[5]}
+                            theme={theme}
+                        />
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <Cards
                             cardTitle={"Plastics "}
                             cardSmallDescription={
                                 "Superior strength, versatility, durability, and wide range of applications."
@@ -71,7 +84,7 @@ const Service = forwardRef(({ title, images }, ref) => {
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
                         <Cards
-                            cardTitle={"Ceramic"}
+                            cardTitle={"Porcelain Tiles"}
                             cardSmallDescription={
                                 "Crafted for durability and precision, our ceramics blend elegance with strength."
                             }
