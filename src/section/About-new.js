@@ -1,9 +1,9 @@
 import React, { forwardRef, useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import imageCard1 from "../assets/images/AboutSeeme-Photoroom.png";
-import aboutImage from "../assets/images/aboutTyer.png";
-import machinery from "../assets/images/machinery.png";
+import imageCard1 from "../assets/images/AboutSeeme-Photoroom.webp";
+import aboutImage from "../assets/images/aboutTyer.webp";
+import machinery from "../assets/images/machinery.webp";
 import "../style/App.css";
 import "../style/About.css";
 
@@ -134,7 +134,7 @@ const AboutNew = forwardRef((_, ref) => {
                                     and innovation in trade, fostering growth
                                     and success in our industry.
                                 </p>
-                                <div className="btn-product-check">
+                                <div className="check-product-btn">
                                     <button>Check our products</button>
                                 </div>
                             </div>
@@ -229,6 +229,7 @@ const AboutNew = forwardRef((_, ref) => {
                             <div className="image-section-container">
                                 <div className="image-section">
                                     <img
+                                        className="rotate-image"
                                         loading="lazy"
                                         src={aboutImage}
                                         alt="Sesame Seed"

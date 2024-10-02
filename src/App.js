@@ -1,6 +1,4 @@
-import "./style/App.css";
-import "./index.css";
-import { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Header from "./components/Hearder";
 import Hero from "./section/Hero";
 import About from "./section/About";
@@ -10,26 +8,71 @@ import ServiceExport from "./section/ServiceExport";
 import ReplacementAbout from "./section/ReplacementAbout";
 import ReplacementNew from "./section/About-new";
 
-import imageCardImport1 from "./assets/images/Products/replacement-sesame-seeds.jpg";
+import imageCardImport1 from "./assets/images/Products/replacement-sesame-seeds.webp";
 import imageCardImport3 from "./assets/images/Products/replacement-Niger-Seed.webp";
-import imageCardImport2 from "./assets/images/Products/soyaBean-replacement-2.png";
+import imageCardImport2 from "./assets/images/Products/soyaBean-replacement-2.webp";
 import imageCardImport4 from "./assets/images/Products/red-speckled-kidney-beans-659.webp";
-import imageCardImport5 from "./assets/images/Products/Mung_Bean.jpg";
+import imageCardImport5 from "./assets/images/Products/Mung_Bean.webp";
 import imageCardImport6 from "./assets/images/Products/Unroasted-coffee.webp";
 
-import imageCardExport1 from "./assets/images/Products/Replacement-Tyer.jpg";
-import imageCardExport3 from "./assets/images/Products/replacement-rebar-boxed.jpg";
-import imageCardExport2 from "./assets/images/Products/replacement-truck.jpg";
+import imageCardExport1 from "./assets/images/Products/Replacement-Tyer.webp";
+import imageCardExport3 from "./assets/images/Products/replacement-rebar-boxed.webp";
+import imageCardExport2 from "./assets/images/Products/replacement-truck.webp";
 import imageCardExport4 from "./assets/images/Products/pePlastic.webp";
 import imageCardExport5 from "./assets/images/Products/ceramic.webp";
-import imageCardExport6 from "./assets/images/Products/replacement-construction-material.png";
+import imageCardExport6 from "./assets/images/Products/replacement-construction-material.webp";
+
+import backgroudWhiteImage from "./assets/images/pattern_background.webp";
+import sliderImage1 from "./assets/images/tyre2.webp";
+import sliderImage2 from "./assets/images/_Oa86jjDAKgLGG_RwSpGt-transformed.webp";
+import sliderImage3 from "./assets/images/industrialChemicals1.png";
 
 import image1 from "./assets/images/background-for-section.webp";
 import image2 from "./assets/images/polina-rytova-1dGMs4hhcVA-unsplash.webp";
 
 import Contact from "./section/Contact";
 import ContactForm from "./section/ContactForm";
+
+// Component to load multiple images
+const ImageLoader = ({ onAllImagesLoaded }) => {
+    const [loadedImagesCount, setLoadedImagesCount] = useState(0);
+    const totalImages = 4; // The three slider images + the background image
+
+    useEffect(() => {
+        const images = [
+            backgroudWhiteImage,
+            sliderImage1,
+            sliderImage2,
+            sliderImage3,
+        ];
+
+        images.forEach((src) => {
+            const img = new Image();
+            img.src = src;
+
+            img.onload = () => {
+                setLoadedImagesCount((prevCount) => prevCount + 1);
+            };
+
+            img.onerror = () => {
+                console.error(`Image failed to load: ${src}`);
+            };
+        });
+    }, []);
+
+    // When all images are loaded, call the callback
+    useEffect(() => {
+        if (loadedImagesCount === totalImages) {
+            onAllImagesLoaded(); // All images are loaded
+        }
+    }, [loadedImagesCount, totalImages, onAllImagesLoaded]);
+
+    return null; // Render nothing while loading images
+};
+
 function App() {
+    const [allImagesLoaded, setAllImagesLoaded] = useState(false);
+
     const imagesForServiceImported = [
         imageCardImport1,
         imageCardImport2,
@@ -38,6 +81,7 @@ function App() {
         imageCardImport5,
         imageCardImport6,
     ];
+
     const imagesForServiceExported = [
         imageCardExport1,
         imageCardExport2,
@@ -57,64 +101,53 @@ function App() {
             sectionRef.current.scrollIntoView({ behavior: "smooth" });
         }
     };
-
-    const tabsContent = [
-        {
-            label: "Tab 1",
-            content: "This is the content for Tab 1",
-            image: require("./assets/images/Products/chemicals-1.webp"),
-        },
-        {
-            label: "Tab 2",
-            content: "This is the content for Tab 2",
-            image: require("./assets/images/Products/SoyaBean-transformed.webp"),
-        },
-        {
-            label: "Tab 3",
-            content: "This is the content for Tab 3",
-            image: require("./assets/images/Products/truck.webp"),
-        },
-    ];
-
     return (
-        <div className="App">
-            <Header
-                scrollToSection={scrollToSection}
-                AboutRef={AboutRef}
-                HeroRef={HeroRef}
-                ServiceRef={ServiceRef}
-                ContactRef={ContactRef}
-            />
-            <Hero
-                ref={HeroRef}
-                scrollToSection={scrollToSection}
-                AboutRef={AboutRef}
-                ServiceRef={ServiceRef}
-            />
-            <div className="Golder_Segment"></div>
-            {/* <About ref={AboutRef} /> */}
-            {/* <ReplacementAbout tabsContent={tabsContent} /> */}
-            <ReplacementNew ref={AboutRef} />
-            <StaionedImage image={image1} />
-            <Service
-                title={"Export "}
-                images={imagesForServiceImported}
-                ref={ServiceRef}
-            />
-            <StaionedImage image={image2} />
-            <ServiceExport
-                title={"Import "}
-                images={imagesForServiceExported}
-            />
+        <div>
+            {/* Load images and show content only when all images are loaded */}
+            <ImageLoader onAllImagesLoaded={() => setAllImagesLoaded(true)} />
 
-            <Contact ref={ContactRef} />
-            <ContactForm />
+            {allImagesLoaded ? (
+                <div className="App">
+                    <Header
+                        scrollToSection={scrollToSection}
+                        AboutRef={AboutRef}
+                        HeroRef={HeroRef}
+                        ServiceRef={ServiceRef}
+                        ContactRef={ContactRef}
+                    />
+                    <Hero
+                        ref={HeroRef}
+                        scrollToSection={scrollToSection}
+                        AboutRef={AboutRef}
+                        ServiceRef={ServiceRef}
+                        backgroudWhiteImage={backgroudWhiteImage}
+                        sliderImages={[
+                            sliderImage1,
+                            sliderImage2,
+                            sliderImage3,
+                        ]}
+                    />
+                    <div className="Golder_Segment"></div>
+                    <ReplacementNew ref={AboutRef} />
+                    <StaionedImage image={image1} />
+                    <Service
+                        title={"Export "}
+                        images={imagesForServiceImported}
+                        ref={ServiceRef}
+                    />
+                    <StaionedImage image={image2} />
+                    <ServiceExport
+                        title={"Import "}
+                        images={imagesForServiceExported}
+                    />
+                    <Contact ref={ContactRef} />
+                    <ContactForm />
+                </div>
+            ) : (
+                <p>Loading...</p> // You can replace this with a spinner or a loading indicator
+            )}
         </div>
     );
 }
 
 export default App;
-
-//Todo: Clean up and orgnize the code
-//Todo: Compress the images using webp
-// Todo: Try to reduce the size of the project

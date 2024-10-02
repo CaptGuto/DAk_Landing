@@ -95,6 +95,39 @@
         width: 100%;
         padding: 10px 10px;
     }
+
+    .third-about-container{
+        background: linear-gradient(to bottom, #131e2a 50%, #f1f1f1 50%) !important;
+
+    }
+    
+    .first-about-container{
+        background: linear-gradient(to top, #131e2a 50%, #f1f1f1 50%) !important; ;
+    }
+
+    .Replacement-About-Container h5{
+        font-size: 1.3rem;
+    }
+    
+    .paragraph-listing ul{
+        font-size: 0.9rem;
+    }
+
+    .text-section p{
+        font-size: 1rem;
+    }
+    .text-section .first-paragraph{
+        font-size: 1.6rem;
+    }
+    .text-section .dak-name-in-paragraph{
+        font-size: 1.7rem;
+    }
+    .text-about-us-container h1{
+        font-size: 3rem;
+    }
+    .first-box{
+        margin-top: 10px;
+    }
     /* Todo: adjust the font size of the following screen size */
   }
 
@@ -121,3 +154,21 @@
 .text-about-us-container h1{
     font-weight: bold;
 }
+
+
+  .check-product-btn button{
+    margin-top: 30px;
+    width: 210px;
+    font-size: 0.93333333333333rem;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #131e2a;
+    border: none;
+    background-image: linear-gradient(45deg, #7F5523 0%, #FCC676 100%);
+  }
+
+  .check-product-btn button:hover{
+    font-size: 0.95rem;
+    color: #f1f1f1;
+    cursor: pointer;
+  }

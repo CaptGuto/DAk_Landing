@@ -1,8 +1,8 @@
 import "../style/App.css";
-import twitterLogo from "../assets/images/twitterx.png";
-import facebookLogo from "../assets/images/icons8-facebook-50 (1).png";
-import youtubeLogo from "../assets/images/icons8-youtube-50 (1).png";
-import linkedinLogo from "../assets/images/icons8-linkedin-50 (1).png";
+import twitterLogo from "../assets/images/icons/twitterx.png";
+import facebookLogo from "../assets/images/icons/icons8-facebook-50 (1).png";
+import youtubeLogo from "../assets/images/icons/icons8-youtube-50 (1).png";
+import linkedinLogo from "../assets/images/icons/icons8-linkedin-50 (1).png";
 import { forwardRef } from "react";
 
 const Contact = forwardRef((props, ref) => {
