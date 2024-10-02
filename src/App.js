@@ -7,7 +7,7 @@ import Service from "./section/Service";
 import ServiceExport from "./section/ServiceExport";
 import ReplacementAbout from "./section/ReplacementAbout";
 import ReplacementNew from "./section/About-new";
-
+import "./style/loading.css";
 import imageCardImport1 from "./assets/images/Products/replacement-sesame-seeds.webp";
 import imageCardImport3 from "./assets/images/Products/replacement-Niger-Seed.webp";
 import imageCardImport2 from "./assets/images/Products/soyaBean-replacement-2.webp";
@@ -29,6 +29,8 @@ import sliderImage3 from "./assets/images/industrialChemicals1.png";
 
 import image1 from "./assets/images/background-for-section.webp";
 import image2 from "./assets/images/polina-rytova-1dGMs4hhcVA-unsplash.webp";
+
+import loadingImage from "./assets/images/gear.webp";
 
 import Contact from "./section/Contact";
 import ContactForm from "./section/ContactForm";
@@ -144,7 +146,11 @@ function App() {
                     <ContactForm />
                 </div>
             ) : (
-                <p>Loading...</p> // You can replace this with a spinner or a loading indicator
+                <div class="loader-container">
+                    <div class="gear">
+                        <img src={loadingImage} />
+                    </div>
+                </div> // You can replace this with a spinner or a loading indicator
             )}
         </div>
     );
