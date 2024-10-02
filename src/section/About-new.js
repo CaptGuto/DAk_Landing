@@ -106,7 +106,9 @@ const AboutNew = forwardRef((_, ref) => {
                 className="Replacement-About-Container first-about-container"
                 style={{
                     backgroundPosition: firstBoxisVisible
-                        ? "35% bottom"
+                        ? window.matchMedia("(max-width: 400px)").matches
+                            ? "30% bottom" // For screens below 400px
+                            : "35% bottom" // For screens above 400px
                         : "left bottom",
                     transition: "background-position 0.7s ease-out",
                 }}
