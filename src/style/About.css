@@ -63,6 +63,9 @@
     max-width: 100%;
 }
 
+.image-section img:hover {
+    transform: scale(1.05); 
+}
 .paragraph-listing ul{
     display: flex;
     flex-direction: column;

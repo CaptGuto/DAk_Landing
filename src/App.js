@@ -130,7 +130,11 @@ function App() {
                         ]}
                     />
                     <div className="Golder_Segment"></div>
-                    <ReplacementNew ref={AboutRef} />
+                    <ReplacementNew
+                        ref={AboutRef}
+                        scrollToSection={scrollToSection}
+                        ServiceRef={ServiceRef}
+                    />
                     <StaionedImage image={image1} />
                     <Service
                         title={"Export "}

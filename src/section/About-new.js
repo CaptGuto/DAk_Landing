@@ -7,7 +7,7 @@ import machinery from "../assets/images/machinery.webp";
 import "../style/App.css";
 import "../style/About.css";
 
-const AboutNew = forwardRef((_, ref) => {
+const AboutNew = forwardRef(({ scrollToSection, ServiceRef }, ref) => {
     const { ref: line1Ref, inView: line1InView } = useInView({
         threshold: 0.1,
         triggerOnce: true,
@@ -136,7 +136,10 @@ const AboutNew = forwardRef((_, ref) => {
                                     and innovation in trade, fostering growth
                                     and success in our industry.
                                 </p>
-                                <div className="check-product-btn">
+                                <div
+                                    className="check-product-btn"
+                                    onClick={() => scrollToSection(ServiceRef)}
+                                >
                                     <button>Check our products</button>
                                 </div>
                             </div>
