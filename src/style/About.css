@@ -84,7 +84,7 @@
 }
 
 
-@media (max-width: 590px) {
+@media (max-width: 800px) {
     .first-box, .third-box{
         flex-direction: column;
     }
@@ -131,7 +131,56 @@
     .first-box{
         margin-top: 10px;
     }
+    .image-section{
+        width: 50%;
+    }
     /* Todo: adjust the font size of the following screen size */
+  }
+  @media (max-width: 920px) {
+    .Replacement-About-Container h5{
+        font-size: 1.3rem;
+    }
+    
+    .paragraph-listing ul{
+        font-size: 0.9rem;
+    }
+
+    .text-section p{
+        font-size: 1rem;
+    }
+    .text-section .first-paragraph{
+        font-size: 1.6rem;
+    }
+    .text-section .dak-name-in-paragraph{
+        font-size: 1.7rem;
+    }
+    .text-about-us-container h1{
+        font-size: 3rem;
+    }
+    .first-box{
+        margin-top: 10px;
+    }
+    .image-section{
+        width: 50%;
+    }
+    .image-section{
+        width: 70%;
+        /* background-color: red; */
+    }
+  }
+
+  @media (max-width: 420px) {
+    .image-section{
+        width: 70%;
+    }
+    .third-about-container{
+        background: linear-gradient(to bottom, #131e2a 70%, #f1f1f1 50%) !important;
+
+    }
+    
+    .first-about-container{
+        background: linear-gradient(to top, #131e2a 43%, #f1f1f1 43%) !important;    
+    }
   }
 
   /* Color Styling */

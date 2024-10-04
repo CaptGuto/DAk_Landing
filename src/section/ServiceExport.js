@@ -19,7 +19,7 @@ const Service = forwardRef(({ title, images }, ref) => {
                 <div class="export_services row justify-content-center">
                     <div class="col-lg-4 col-md-6 mb-4">
                         <Cards
-                            cardTitle={"Tyer"}
+                            cardTitle={"Tyre"}
                             cardSmallDescription={
                                 "Our imported tyres offer an exceptional balance of quality and affordability."
                             }

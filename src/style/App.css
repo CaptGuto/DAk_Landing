@@ -62,7 +62,7 @@
 
 /* Header Section */
 .Header_Container{
-  background-color: var(--blue_navy);
+  background-color:#131e2a;
   display: flex;
   align-items: center;
   /* justify-content: space-around; */
@@ -375,7 +375,9 @@
     font-size: 11px;
   }
   
-  
+  .Service-Title h2{
+    font-size: 2.9rem !important;
+  }
 }
 @media  screen and (max-width:400px) {
   .Bottom_Image h2{
@@ -727,10 +729,9 @@ h1{
   .socials{
     width: 100%;
     flex-direction: row !important;
-    justify-content: space-between !important;
+    justify-content: space-around !important;
     align-items: center !important;
-    margin-right: 60px;
-    margin-left: 60px;
+    /* margin: 0px 60px; */
   }
   .socials a{
     margin-top: 0px !important;
@@ -756,8 +757,8 @@ h1{
     flex-direction: row;
     justify-content: space-around !important;
     width: 100%;
-    margin-right: 40px;
-    margin-left: 40px;
+    /* margin-right: 40px;
+    margin-left: 40px; */
   }
 }
 @media screen and  (max-width:400px){
@@ -766,13 +767,19 @@ h1{
     flex-direction: row;
     justify-content: space-around !important;
     width: 100%;
-    margin-right: 40px;
-    margin-left: 40px;
+    /* margin-right: 40px;
+    margin-left: 40px; */
   }
   .card2-img{
     height:35px;
     width: 35px;
     margin-left: 0px;
+  }
+}
+@media screen and  (max-width:600px){
+  .socials{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
   }
 }
 /* end of Location */
@@ -898,6 +905,9 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .ContactForm-content{
+    margin-bottom: 20px; 
   }
 }
 /* ADD ONE BREAK POINT : DECREASE THE SIZE OF THE CARDS INSTEAD OF JUST CHANGING IT INTO ONE IN A ROW  */

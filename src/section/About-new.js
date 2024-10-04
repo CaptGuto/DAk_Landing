@@ -1,7 +1,7 @@
 import React, { forwardRef, useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import imageCard1 from "../assets/images/AboutSeeme-Photoroom.webp";
+import imageCard1 from "../assets/images/sackofgrain.webp";
 import aboutImage from "../assets/images/aboutTyer.webp";
 import machinery from "../assets/images/machinery.webp";
 import "../style/App.css";
@@ -107,8 +107,8 @@ const AboutNew = forwardRef(({ scrollToSection, ServiceRef }, ref) => {
                 style={{
                     backgroundPosition: firstBoxisVisible
                         ? window.matchMedia("(max-width: 400px)").matches
-                            ? "30% bottom" // For screens below 400px
-                            : "35% bottom" // For screens above 400px
+                            ? "30% bottom"
+                            : "35% bottom"
                         : "left bottom",
                     transition: "background-position 0.7s ease-out",
                 }}

@@ -24,7 +24,7 @@ import imageCardExport6 from "./assets/images/Products/replacement-construction-
 
 import backgroudWhiteImage from "./assets/images/pattern_background.webp";
 import sliderImage1 from "./assets/images/tyre2.webp";
-import sliderImage2 from "./assets/images/_Oa86jjDAKgLGG_RwSpGt-transformed.webp";
+import sliderImage2 from "./assets/images/sackofgrain-slider.webp";
 import sliderImage3 from "./assets/images/industrialChemicals1.png";
 
 import image1 from "./assets/images/background-for-section.webp";

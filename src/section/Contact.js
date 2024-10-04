@@ -33,17 +33,12 @@ const Contact = forwardRef((props, ref) => {
                                     alt="FacebookLogo"
                                 />
                             </a>
-                            <a href="" target="_blank" className="mt-5">
-                                <img
-                                    className="card2-img"
-                                    src={youtubeLogo}
-                                    alt="youtubeLogo"
-                                />
-                            </a>
                         </div>
                     </div>
                     <div className="col-md-12 col-lg-4 mb-sm-0 mt-sm-auto mb-lg-0 bg-white card1">
-                        <h2 className="mt-5">Get In Touch</h2>
+                        <h2 className="mt-5">
+                            Get In <span className="makeGold">Touch</span>
+                        </h2>
                         <div className="card1-content">
                             <h3 className="contact-content mt-5 me-3">
                                 Meet Us
@@ -52,11 +47,11 @@ const Contact = forwardRef((props, ref) => {
                             <h3 className="contact-content mt-3 me-3">
                                 Call Us
                             </h3>
-                            <p>097865432</p>
+                            <p>0930897521</p>
                             <h3 className="contact-content mt-3 me-3">
                                 Email Us
                             </h3>
-                            <p>something@gmail.com</p>
+                            <p>info@daktradingplc.com</p>
                         </div>
                     </div>
                     <div className="col-lg-7 col-md-12 col-sm-12 map-container">
