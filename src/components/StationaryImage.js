@@ -3,7 +3,6 @@ function StationedImage({ image }) {
         backgroundImage: `url(${image})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundAttachment: "fixed",
         height: "460px",
     };
 

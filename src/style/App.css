@@ -975,6 +975,10 @@ h1{
   .left_content_paragraph_image_holder img {
     width: 280px !important; 
   }
+  .image_container img{
+    width: 100% !important;
+    height: auto !important;
+  }
 }
 
 img, video{
