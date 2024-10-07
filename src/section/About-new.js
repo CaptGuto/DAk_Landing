@@ -122,8 +122,8 @@ const AboutNew = forwardRef(({ scrollToSection, ServiceRef }, ref) => {
                                     <span className="dak-name-in-paragraph">
                                         DAK Trading PLC{" "}
                                     </span>
-                                    one of the largest import export companies
-                                    in Ethiopia
+                                    One of the rising leader in Ethiopia
+                                    import-export sector
                                 </p>
                                 <p>
                                     Our mission is to ensure the highest quality
@@ -218,17 +218,19 @@ const AboutNew = forwardRef(({ scrollToSection, ServiceRef }, ref) => {
                                     <h5>Vision and Core Values</h5>
                                 </div>
                                 <p>
-                                    Our vision is to lead the way in Ethiopia
-                                    and East Africa, setting benchmarks for
-                                    excellence through unwavering commitment to
-                                    quality, reliability, and innovative
-                                    solutions. We uphold core values of
-                                    integrity, customer satisfaction, and
-                                    sustainability, aiming to foster growth and
-                                    make a significant impact on both local and
-                                    global markets. At DAK Trading PLC, we are
-                                    dedicated to building a legacy of trust and
-                                    excellence.
+                                    To be the leading trading company in
+                                    Ethiopia and East Africa, setting industry
+                                    standards through a commitment to quality,
+                                    efficiency, and strategic partnerships. We
+                                    prioritize values of integrity,
+                                    trustworthiness, and market responsiveness,
+                                    ensuring smooth operations and long-term
+                                    relationships. At DAK Trading PLC, we aim to
+                                    create value for both suppliers and
+                                    customers by facilitating reliable,
+                                    efficient trade that fosters growth and
+                                    competitive advantage in local and
+                                    international markets.
                                 </p>
                             </div>
                             <div className="image-section-container">

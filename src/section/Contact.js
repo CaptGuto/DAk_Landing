@@ -43,7 +43,7 @@ const Contact = forwardRef((props, ref) => {
                             <h3 className="contact-content mt-5 me-3">
                                 Meet Us
                             </h3>
-                            <p>somewhere, Addis Ababa</p>
+                            <p>Near African union krismus building</p>
                             <h3 className="contact-content mt-3 me-3">
                                 Call Us
                             </h3>

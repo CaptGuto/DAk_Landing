@@ -60,10 +60,10 @@ const Service = forwardRef(({ title, images }, ref) => {
                         <Cards
                             cardTitle={"Building Materials "}
                             cardSmallDescription={
-                                "Superior strength, versatility, durability, and wide range of applications."
+                                "Reliable strength, durability, and versatility for all construction needs."
                             }
                             cardDescription={
-                                "From packaging to industrial use, these plastics provide reliable performance and flexibility, ensuring long-lasting results. With a focus on quality and sustainability, helps meet the needs of both manufacturers and consumers."
+                                "Our building materials are designed to support a wide range of construction projects, providing exceptional quality and reliability. Whether for residential or commercial use, these materials ensure stability and long-lasting performance."
                             }
                             image={images[5]}
                             theme={theme}
