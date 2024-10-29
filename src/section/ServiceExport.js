@@ -63,7 +63,7 @@ const Service = forwardRef(({ title, images }, ref) => {
                                 "Reliable strength, durability, and versatility for all construction needs."
                             }
                             cardDescription={
-                                "Our building materials are designed to support a wide range of construction projects, providing exceptional quality and reliability. Whether for residential or commercial use, these materials ensure stability and long-lasting performance."
+                                "Our building materials are crafted to meet diverse construction needs, delivering unmatched quality and durability. Whether for large-scale developments or specialized projects, these materials guarantee strength and enduring performance."
                             }
                             image={images[5]}
                             theme={theme}
@@ -89,7 +89,7 @@ const Service = forwardRef(({ title, images }, ref) => {
                                 "Crafted for durability and precision, our ceramics blend elegance with strength."
                             }
                             cardDescription={
-                                "With their refined aesthetic and robust durability, these ceramics enhance both functionality and visual appeal. Ideal for applications requiring both style and resilience, our high-quality ceramics provide lasting value and quality."
+                                "Blending sophisticated aesthetics with unmatched durability, our ceramics elevate spaces by combining elegance with strength. Perfect for projects demanding style and resilience, these premium ceramics deliver enduring quality and timeless appeal."
                             }
                             image={images[4]}
                             theme={theme}

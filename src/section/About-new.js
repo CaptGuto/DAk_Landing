@@ -122,19 +122,20 @@ const AboutNew = forwardRef(({ scrollToSection, ServiceRef }, ref) => {
                                     <span className="dak-name-in-paragraph">
                                         DAK Trading PLC{" "}
                                     </span>
-                                    One of the rising leader in Ethiopia
-                                    import-export sector
+                                    A key player in sourcing and delivering
+                                    high-quality products in Ethiopia’s growing
+                                    market.
                                 </p>
                                 <p>
-                                    Our mission is to ensure the highest quality
-                                    in both our exports and imports while
-                                    delivering exceptional service to our
-                                    partners and clients.
+                                    Our mission is to provide top-tier products,
+                                    ensuring consistent value and reliability to
+                                    our customers and partners.
                                 </p>
                                 <p>
-                                    We aim to set the standard for excellence
-                                    and innovation in trade, fostering growth
-                                    and success in our industry.
+                                    We strive to lead with a focus on product
+                                    excellence and innovation, driving growth
+                                    and satisfaction across all sectors we
+                                    serve.
                                 </p>
                                 <div
                                     className="check-product-btn"
@@ -172,7 +173,7 @@ const AboutNew = forwardRef(({ scrollToSection, ServiceRef }, ref) => {
                             <div className="text-section">
                                 <div className="paragraph-listing">
                                     <div className="paragraph-listing-heading">
-                                        <h5>Our Mission</h5>
+                                        <h5 className="bold">Our Mission</h5>
                                     </div>
                                     <ul>
                                         <li>

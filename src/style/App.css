@@ -193,6 +193,7 @@
   color: #131e2a;
   font-size: 17px;
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .Hero_Container .Welcome_Content{
@@ -312,7 +313,7 @@
 .Hero_Container p{
   font-size: 14px;
   margin-top: 20px;
-  margin-bottom: 10px; 
+  margin-bottom: 20px; 
 }
 
 .Image_Container{

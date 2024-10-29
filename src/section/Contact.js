@@ -36,7 +36,7 @@ const Contact = forwardRef((props, ref) => {
                         </div>
                     </div>
                     <div className="col-md-12 col-lg-4 mb-sm-0 mt-sm-auto mb-lg-0 bg-white card1">
-                        <h2 className="mt-5">
+                        <h2 className="mt-5 bold">
                             Get In <span className="makeGold">Touch</span>
                         </h2>
                         <div className="card1-content">

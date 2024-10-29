@@ -21,7 +21,7 @@ const Service = forwardRef(({ title, images }, ref) => {
                         <Cards
                             cardTitle={"Coffee Beans"}
                             cardSmallDescription={
-                                "Jimas fines beand, Celebrated for rich flavor and heritage."
+                                " Arabica finest coffee beans, Celebrated for rich flavor and heritage."
                             }
                             cardDescription={
                                 "Ethiopian coffee beans are celebrated for their rich flavor and heritage. Known as the birthplace of Arabica coffee, these beans offer unique profiles with floral notes and balanced acidity, making them a global favorite."
@@ -34,10 +34,10 @@ const Service = forwardRef(({ title, images }, ref) => {
                         <Cards
                             cardTitle={"Sesame seeds"}
                             cardSmallDescription={
-                                "Humera and wellega finest sesame seeds"
+                                "Humera and Wollega finest sesame seeds"
                             }
                             cardDescription={
-                                "Humera and Wellega are renowned varieties of Ethiopian sesame seeds, valued for their high oil content and rich flavor. Humera is known for its whitish color, while Wellega is darker and aromatic."
+                                "Humera and Wollega are renowned varieties of Ethiopian sesame seeds, valued for their high oil content and rich flavor. Humera is known for its whitish color, while Wollega, with even higher oil content, is darker and aromatic."
                             }
                             image={images[0]}
                             theme={theme}
